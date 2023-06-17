@@ -1,0 +1,220 @@
+
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="https://t3.ftcdn.net/jpg/02/19/99/80/360_F_219998038_1RgWtMp4G21KZQhmzGl1fE8rY8d1wmQn.jpg" >
+    </div>
+    <div class="box">
+        <form name="myform"><h3>
+        
+      
+
+        <h4>1. What was the first toy to be advertised on TV?<br></h4>
+        <div class="rad">
+        <input type="radio" name="q1" value="a" id="a1">Mr. Potato Head<br>
+        <input type="radio"  name="q1" value="b" id="b1">Blackgrain<br>
+        <input type="radio"  name="q1" value="c" id="c1">Silly Putty <br>
+        </div>   
+  
+        <h4>2. Who invented Spirograph, the geometric drawing toy?<br></h4>
+        <div class="rad">
+        <input type="radio" name="q2" value="a" id="a2">Denys Fisher<br>
+        <input type="radio" name="q2" value="b" id="b2">Gordon Rugg<br>
+        <input type="radio" name="q2" value="c" id="c2">Jeff Forshaw<br>
+        </div>
+ 
+        <h4>3. 
+            How many moving parts had G.I. Joe doll when it was first made?<br></h4>
+            <div class="rad">
+        <input type="radio"  name="q3" value="a" id="a3">21<br>
+        <input type="radio" name="q3" value="b" id="b3">22<br>
+        <input type="radio" name="q3" value="c" id="c3">25<br>
+    </div>
+  
+        <h4>4. What is the name of the egg shaped toy which move back and forth but don't fall down?<br></h4>
+        <div class="rad">
+        <input type="radio" name="q4" value="a" id="a4">Weebles <br>
+        <input type="radio" name="q4" value="b" id="b4">Pebbles<br>
+        <input type="radio" name="q4" value="c" id="c4">Eggheads<br>
+    </div>
+
+        <h4>5. 
+            Which company manufactures "Hot Wheels"?<br></h4>
+            <div class="rad">
+        <input type="radio" name="q5" value="a" id="a5">Mattel <br>
+        <input type="radio" name="q5" value="b" id="b5">Thomas<br>
+        <input type="radio" name="q5" value="c" id="c5">Barbie<br>
+    </div>
+    
+        <input type="submit" value="submit" onclick="check()" >
+    </form>
+   
+    
+    </div>
+    
+
+    <script>
+        function check()
+        {
+        var ans1,ans2,ans3,ans4,ans5,mark=0;
+     
+        if(document.getElementById("a1").checked)
+        {
+        ans1=document.getElementById("a1").value;
+        }
+        else if(document.getElementById("b1").checked)
+        {
+        ans1=document.getElementById("b1").value;
+        }
+        else if(document.getElementById("c1").checked)
+        {
+        ans1=document.getElementById("c1").value;
+        }
+        else 
+        {
+        ans1=0
+        }
+        
+        
+        
+                          
+        
+        if(document.getElementById("a2").checked)
+        {
+        ans2=document.getElementById("a2").value;
+        }
+        else if(document.getElementById("b2").checked)
+        {
+        ans2=document.getElementById("b2").value;
+        }
+        else if(document.getElementById("c2").checked)
+        {
+        ans2=document.getElementById("c2").value;
+        }
+        else 
+        {
+        ans2=0
+        }
+        
+        
+                                  if(document.getElementById("a3").checked)
+                                  {
+                                   ans3=document.getElementById("a3").value;
+                                  }
+                                  else if(document.getElementById("b3").checked)
+                                  {
+                                  ans3=document.getElementById("b3").value;
+                                  }
+                                  else if(document.getElementById("c3").checked)
+                                  {
+                                  ans3=document.getElementById("c3").value;
+                                  }
+                                  else 
+                                  {
+                                  ans3=0
+                                  }
+      
+        
+        
+        
+        if(document.getElementById("a4").checked)
+        {
+        ans4=document.getElementById("a4").value;
+        }
+        else if(document.getElementById("b4").checked)
+        {
+        ans4=document.getElementById("b4").value;
+        }
+        else if(document.getElementById("c4").checked)
+        {
+        ans4=document.getElementById("c4").value;
+        }
+        else 
+        {
+        ans4=0;
+        }
+
+
+        if(document.getElementById("a5").checked)
+        {
+        ans5=document.getElementById("a5").value;
+        }
+        else if(document.getElementById("b5").checked)
+        {
+        ans5=document.getElementById("b5").value;
+        }
+        else if(document.getElementById("c5").checked)
+        {
+        ans5=document.getElementById("c5").value;
+        }
+        else 
+        {
+        ans5=0;
+        }
+
+        
+        if(ans1=="a")
+        {
+        mark=mark+1;
+        }
+        else
+        {
+        mark=mark+0;
+        }
+           if(ans2=="a")
+            {
+            mark=mark+1;
+            }
+            else
+            {
+            mark=mark+0;
+            }
+            
+            
+         
+        
+        if(ans3=="a")
+        {
+        mark=mark+1;
+        }
+        else
+        {
+        mark=mark+0;
+        }
+        
+        if(ans4=="a")
+        {
+        mark=mark+1;
+        }
+        else
+        {
+        mark=mark+0;
+        }
+        
+        if(ans5=="a")
+        {
+        mark=mark+1;
+        }
+        else
+        {
+        mark=mark+0;
+        }
+        
+        
+        if(mark==5){
+            alert("you scored "+ mark + "marks"); 
+            window.open('discount.html')
+        }
+        else {
+            alert("you scored "+ mark + "marks"); 
+
+        }
+        
+        }
+        </script>       
+</body>
+</html>
